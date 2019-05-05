@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f3"
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+
+                android:background="@color/colorSplash"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/fael"
+                    app:civ_border_width="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="26dp"
+                    app:civ_border_color="#38b5f2"/>
+
+                <TextView
+
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Fael Antoni"
+                    android:textColor="@android:color/white"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintVertical_bias="0.031"
+                    android:layout_centerHorizontal="true"/>
+                />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="14.5dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="35.6dp"
+                    android:background="@drawable/rectangle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="225dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/nunito"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.3dp"
+                            android:gravity="center_horizontal"
+                            android:text="About Me"
+                            android:textColor="#333232"
+                            android:textSize="13.7sp" />
+
+                        <me.biubiubiu.justifytext.library.JustifyTextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:id="@+id/TxtView4"
+
+                            android:textSize="15sp"
+                            android:fontFamily="@font/nunito"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="Saya haus akan pengetahuan, selalu berusaha untuk melatih dalam keahlian. dapat berdiskusi dengan baik mengenai pekerjaan, dapat bertanggung jawab, dapat mnyelesaikan pekerjaan dengan detail dan sesuai yang dijadwalkan. dan
+dapat mengambil keputusan dibawah tekanan"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingLeft="14.5dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="35.6dp"
+                    android:background="@drawable/rectangle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="19dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.3dp"
+                            android:gravity="center_horizontal"
+                            android:text="Interest"
+                            android:fontFamily="@font/nunito"
+                            android:textColor="#333232"
+                            android:textSize="13.7sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/imgEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="Hobby "
+                                android:textSize="15sp"
+                                android:layout_marginTop="12.3dp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/txtEmail"
+                                android:fontFamily="@font/nunito"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorSplash"
+                                android:text="Berenang, Badminton, Basket"
+                                android:layout_marginTop="12.3dp"
+                                android:layout_marginLeft="10.3dp"
+                                android:layout_toRightOf="@+id/imgEmail" />
+
+                            <TextView
+                                android:id="@+id/imgInstagram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12.3dp"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="Cita-cita"
+                                android:layout_below="@id/imgEmail"/>
+
+                            <TextView
+                                android:id="@+id/txtInstagram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pertama menjadi pilot, lalu akhirnya menjadi Developer"
+                                android:layout_marginTop="13dp"
+                                android:textColor="@color/colorSplash"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/nunito"
+                                android:layout_marginLeft="10.3dp"
+                                android:layout_toRightOf="@+id/imgInstagram"
+                                android:layout_below="@id/imgEmail"/>
+
+                            <TextView
+                                android:id="@+id/imgFacebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:text="Makes"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/nunito_bold"
+
+                                android:layout_below="@id/imgInstagram"/>
+
+                            <TextView
+                                android:id="@+id/Facebookkk"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ayam Panggang, Sereal"
+                                android:fontFamily="@font/nunito"
+                                android:textColor="@color/colorSplash"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginLeft="10.3dp"
+                                android:layout_toRightOf="@+id/imgFacebook"
+                                android:layout_below="@id/imgInstagram"/>
+
+                            <TextView
+                                android:id="@+id/Facebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Mikes"
+                                android:textSize="15sp"
+                                android:fontFamily="@font/nunito_bold"
+
+                                android:layout_below="@id/Facebookkk"/>
+
+                            <TextView
+                                android:id="@+id/txtLinkedin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thai tea, Susu, Yoghurt"
+                                android:fontFamily="@font/nunito"
+                                android:textColor="@color/colorSplash"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginLeft="10.3dp"
+                                android:layout_toRightOf="@+id/imgFacebook"
+                                android:layout_below="@id/Facebookkk"/>
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
